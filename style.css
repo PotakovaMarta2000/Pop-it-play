@@ -1,0 +1,245 @@
+/* Сброс браузерных стилей + Свойство box-sizing*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Прописываем подключенный шрифт */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%; /* задаем ширину  */
+    height: 60vh; /* задаем высоту  */
+    background: #f1b25e; /* задаем цвет фона  */
+    display:flex; /* задаем свойство CSS-flex,чтобы эл-ты стали "гибкими" */
+    justify-content: center; /* определяет как браузер распределяет пространство между элементами контента в контейнере */
+}
+
+.header {
+    width: 80%;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    height: 10%; /* высота контейнера */
+    font-weight: bold; 
+    padding: 10px 0; /* отступ сверху-снизу */
+}
+
+.navbar-menu {
+    width: 40%;
+}
+
+.navbar-menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu ul li {
+    display: inline-block; /* задаем строчно-блочное свойство*/ 
+}
+
+.navbar-menu a{
+    color: black; /* задаем цвет шрифта*/
+    text-decoration: none; /* убираем подчеркивания у ссылок*/
+}
+
+.navbar-menu a:hover {
+    color: #fc4700; /* задаем цвет при наведении курсора*/
+}
+/* main-text */
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.main-text{
+    /* width: 50%;
+    height: 80%; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-text h1{
+    color: snow;
+    font-size: 90px;
+    font-weight: 900;
+    margin:20px 0;
+    font-style:normal;
+}
+.main-text h1:hover {
+    color: #fc4700;
+    transition: 3s;
+}
+
+.main-text p{
+    margin: 0;
+    margin-top: -30px;
+    color: snow;
+    font-weight: 700;
+}
+
+.main-text a{
+    align-self: baseline;
+    margin-top: 30px;
+    color: #000;
+    text-decoration: none;
+    background: #c7fcea;
+    padding: 15px 30px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-text a:hover {
+    background: #fc4700;
+}
+
+.big-picture{
+    position: relative;
+}
+
+.big-picture img{
+    position: absolute;
+    width: 190px;
+    top: -120px;
+    right: 170px;
+    z-index: 900;
+ 
+}
+
+.oval{
+    position: absolute;
+    top: -160px;
+    right: 100px;
+    width: 250px;
+    height: 395px;
+    background: #fadaaa;
+    border-radius: 50%;
+    transform: rotate(50deg);
+} 
+
+.central-text{
+    text-align: center;
+    padding-top: 40px;
+    width: 60%;
+    margin: 0 auto;
+    height: 35vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.popit-card-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+} 
+
+.choise-popit{
+    height: 60vh;
+    background-color: #c7fcea;
+    width: 100%;
+    text-align: center;
+} 
+
+ .choise-popit h3 {
+    padding-top: 40px;
+    font-weight: bold;
+} 
+
+.popit-card figure{
+    margin: 0;
+} 
+.popit-card a{
+    color:black;
+}
+
+.popit-card .button{
+    display: inline-block;
+    background: #ffb350;
+    padding: 10px 30px;
+    margin-top: 20px;;
+}
+.button:hover {
+    background: #fc4700;
+} 
+
+/* section class="rules" */
+.rules-wrapper{
+    
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items:center
+} 
+
+.rules-text{
+    position:absolute;
+    width: 40%;
+    left: 100px;
+    
+} 
+
+.rules-text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.rules-picture{
+
+    position:absolute;
+    right: 100px;
+    width: 400px;
+} 
+
+.rules-oval{ 
+    position:absolute;
+    width: 300px;
+    height: 700px;
+    margin-top:50px ;
+    background: #ffbf6b;
+    border-radius: 60%;
+    transform: rotate(-80deg);
+    z-index: -1;
+} 
+/* footer */
+footer{
+    width: 100%;
+    background: #000;
+} 
+
+.footer-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+} 
+.footer-wrapper a:hover {
+    color: #fc4700;
+}
+
+footer a{
+    text-decoration: none;
+    color: gray
+} 
+
+
+
+
+
+
+
+
+
